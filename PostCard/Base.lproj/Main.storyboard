@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nj9-GR-QI5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Brit's Painting-->
@@ -16,11 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brit_Painting.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MmJ-zX-5Tg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Brit_Painting.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MmJ-zX-5Tg">
                                 <rect key="frame" x="0.0" y="20" width="320" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="yPN-kU-7Aj"/>
+                                    <constraint firstAttribute="height" constant="568" id="yQP-h6-y5u"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="MmJ-zX-5Tg" secondAttribute="centerX" id="at1-9a-XEc"/>
+                            <constraint firstAttribute="centerY" secondItem="MmJ-zX-5Tg" secondAttribute="centerY" id="cWi-IS-Xhm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Brit's Painting" id="oq4-Bp-I4Q">
                         <barButtonItem key="rightBarButtonItem" title="Message" id="VI6-9l-aoJ">
@@ -48,19 +57,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0tb-XV-qdu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0tb-XV-qdu">
                                 <rect key="frame" x="44" y="179" width="236" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="6tw-24-Cuo"/>
+                                    <constraint firstAttribute="height" constant="30" id="dhx-og-v9W"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Message Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4S-tK-oUO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Message Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4S-tK-oUO">
                                 <rect key="frame" x="44" y="226" width="236" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="I0J-KH-8oi"/>
+                                    <constraint firstAttribute="height" constant="30" id="kJG-gN-PS1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIG-hp-ziX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIG-hp-ziX">
                                 <rect key="frame" x="42" y="275" width="236" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9gI-k0-vYu"/>
+                                    <constraint firstAttribute="width" constant="236" id="moy-1Z-9Vn"/>
+                                </constraints>
                                 <state key="normal" title="Send Mail">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -68,17 +89,37 @@
                                     <action selector="SendButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QBG-FP-n1F"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgp-K6-l9P">
-                                <rect key="frame" x="16" y="72" width="187" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgp-K6-l9P">
+                                <rect key="frame" x="16" y="72" width="187" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="8TV-lt-NdO"/>
+                                    <constraint firstAttribute="width" constant="187" id="Xmi-b8-bl9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r3B-a9-FJw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r3B-a9-FJw">
                                 <rect key="frame" x="217" y="72" width="87" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="9Y1-bm-Ovj"/>
+                                    <constraint firstAttribute="width" constant="87" id="MN8-pr-BIa"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="WIG-hp-ziX" secondAttribute="centerX" id="1ZN-6z-FsE"/>
+                            <constraint firstAttribute="centerX" secondItem="0tb-XV-qdu" secondAttribute="centerX" id="772-Je-yJu"/>
+                            <constraint firstItem="Qgp-K6-l9P" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Afp-xX-2pd"/>
+                            <constraint firstItem="0tb-XV-qdu" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="115" id="BuW-rU-OWS"/>
+                            <constraint firstItem="Qgp-K6-l9P" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Iyd-aB-sFi"/>
+                            <constraint firstItem="WIG-hp-ziX" firstAttribute="top" secondItem="X4S-tK-oUO" secondAttribute="bottom" constant="19" id="MVt-5e-pAH"/>
+                            <constraint firstItem="X4S-tK-oUO" firstAttribute="top" secondItem="0tb-XV-qdu" secondAttribute="bottom" constant="17" id="bvV-fN-ooE"/>
+                            <constraint firstItem="r3B-a9-FJw" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cL0-s6-gXV"/>
+                            <constraint firstAttribute="centerX" secondItem="X4S-tK-oUO" secondAttribute="centerX" id="iTF-s4-yYZ"/>
+                            <constraint firstItem="r3B-a9-FJw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="wKb-oG-ewQ"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

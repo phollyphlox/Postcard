@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         MessageLabel.textColor = UIColor.redColor()
         SendButtonControl.setTitle("Mail Sent", forState:UIControlState.Normal)
         var answer = calcAge(2)
-        MessageTextBox.text = "age " + "\(answer)"
+        
         print(answer)
         
     }

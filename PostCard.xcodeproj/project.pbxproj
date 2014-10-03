@@ -13,6 +13,9 @@
 		2ED178DA19C34E09005A288C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ED178D919C34E09005A288C /* Images.xcassets */; };
 		2ED178DD19C34E09005A288C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED178DB19C34E09005A288C /* LaunchScreen.xib */; };
 		2ED178E919C34E0A005A288C /* PostCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED178E819C34E0A005A288C /* PostCardTests.swift */; };
+		2ED178F319C34F09005A288C /* Brit_Painting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ED178F219C34F09005A288C /* Brit_Painting.jpg */; };
+		2ED178F519C35362005A288C /* owliePuff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ED178F419C35362005A288C /* owliePuff.jpg */; };
+		2ED178F719C35685005A288C /* AlbertEinsteinStamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ED178F619C35685005A288C /* AlbertEinsteinStamp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		2ED178E219C34E09005A288C /* PostCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED178E719C34E0A005A288C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ED178E819C34E0A005A288C /* PostCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardTests.swift; sourceTree = "<group>"; };
+		2ED178F219C34F09005A288C /* Brit_Painting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Brit_Painting.jpg; sourceTree = "<group>"; };
+		2ED178F419C35362005A288C /* owliePuff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = owliePuff.jpg; sourceTree = "<group>"; };
+		2ED178F619C35685005A288C /* AlbertEinsteinStamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlbertEinsteinStamp.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 		2ED178D019C34E09005A288C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2ED178F619C35685005A288C /* AlbertEinsteinStamp.jpg */,
+				2ED178F419C35362005A288C /* owliePuff.jpg */,
+				2ED178F219C34F09005A288C /* Brit_Painting.jpg */,
 				2ED178D119C34E09005A288C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,7 +203,10 @@
 			files = (
 				2ED178D819C34E09005A288C /* Main.storyboard in Resources */,
 				2ED178DD19C34E09005A288C /* LaunchScreen.xib in Resources */,
+				2ED178F319C34F09005A288C /* Brit_Painting.jpg in Resources */,
 				2ED178DA19C34E09005A288C /* Images.xcassets in Resources */,
+				2ED178F719C35685005A288C /* AlbertEinsteinStamp.jpg in Resources */,
+				2ED178F519C35362005A288C /* owliePuff.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
